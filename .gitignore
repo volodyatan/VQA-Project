@@ -1,0 +1,14 @@
+easy-vqa/data
+easy-vqa/history
+easy-vqa/model_data
+easy-vqa/model_plots
+easy-vqa/models
+easy-vqa/plots
+vqa-abstract-scenes/data
+vqa-abstract-scenes/history
+vqa-abstract-scenes/history_LSTM
+vqa-abstract-scenes/model_data
+vqa-abstract-scenes/model_plots
+vqa-abstract-scenes/models
+vqa-abstract-scenes/plots
+vqa-abstract-scenes/plots_LSTM
