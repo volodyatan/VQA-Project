@@ -224,83 +224,41 @@ def run_model(epochs, model_name, layers, check_top_ans, removeYesNo, get_data, 
   model.save('./models/'+model_name)
 
 # #seq
-# # 3 layers, yes/no (top 2)
-# run_model(epochs=EPOCHS, model_name='3L_yes_no_seq', layers=3, check_top_ans=2, removeYesNo=False, get_data=seq_get_data, type='seq')
-
-# # 5 layers, yes/no (top 2)
-# run_model(epochs=EPOCHS, model_name='5L_yes_no_seq', layers=5, check_top_ans=2, removeYesNo=False, get_data=seq_get_data, type='seq')
-
-# # 3 layers, top 10 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='3L_top_10_seq', layers=3, check_top_ans=10, removeYesNo=True, get_data=seq_get_data, type='seq')
-
-# # 5 layers, top 10 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='5L_top_10_seq', layers=5, check_top_ans=10, removeYesNo=True, get_data=seq_get_data, type='seq')
-
-# # 3 layers, top 100 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='3L_top_100_seq', layers=3, check_top_ans=100, removeYesNo=True, get_data=seq_get_data, type='seq')
-
-# # 5 layers, top 100 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='5L_top_100_seq', layers=5, check_top_ans=100, removeYesNo=True, get_data=seq_get_data, type='seq')
-
 # 3 layers, yes/no (top 2)
-run_model(epochs=EPOCHS, model_name='3L_yes_no_seq_lessDO', layers=3, check_top_ans=2, removeYesNo=False, get_data=seq_get_data, type='seq')
+run_model(epochs=EPOCHS, model_name='3L_yes_no_seq', layers=3, check_top_ans=2, removeYesNo=False, get_data=seq_get_data, type='seq')
 
 # 5 layers, yes/no (top 2)
-run_model(epochs=EPOCHS, model_name='5L_yes_no_seq_lessDO', layers=5, check_top_ans=2, removeYesNo=False, get_data=seq_get_data, type='seq')
+run_model(epochs=EPOCHS, model_name='5L_yes_no_seq', layers=5, check_top_ans=2, removeYesNo=False, get_data=seq_get_data, type='seq')
 
-# # 3 layers, top 10 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='3L_top_10_seq', layers=3, check_top_ans=10, removeYesNo=True, get_data=seq_get_data, type='seq')
+# 3 layers, top 10 answers (not including yes/no)
+run_model(epochs=EPOCHS, model_name='3L_top_10_seq', layers=3, check_top_ans=10, removeYesNo=True, get_data=seq_get_data, type='seq')
 
-# # 5 layers, top 10 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='5L_top_10_seq', layers=5, check_top_ans=10, removeYesNo=True, get_data=seq_get_data, type='seq')
+# 5 layers, top 10 answers (not including yes/no)
+run_model(epochs=EPOCHS, model_name='5L_top_10_seq', layers=5, check_top_ans=10, removeYesNo=True, get_data=seq_get_data, type='seq')
 
-# # 3 layers, top 100 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='3L_top_100_seq', layers=3, check_top_ans=100, removeYesNo=True, get_data=seq_get_data, type='seq')
+# 3 layers, top 100 answers (not including yes/no)
+run_model(epochs=EPOCHS, model_name='3L_top_100_seq', layers=3, check_top_ans=100, removeYesNo=True, get_data=seq_get_data, type='seq')
 
-# # 5 layers, top 100 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='5L_top_100_seq', layers=5, check_top_ans=100, removeYesNo=True, get_data=seq_get_data, type='seq')
-
+# 5 layers, top 100 answers (not including yes/no)
+run_model(epochs=EPOCHS, model_name='5L_top_100_seq', layers=5, check_top_ans=100, removeYesNo=True, get_data=seq_get_data, type='seq')
 
 # bow
 # 3 layers, yes/no (top 2)
 run_model(epochs=EPOCHS, model_name='3L_yes_no_bow', layers=3, check_top_ans=2, removeYesNo=False, get_data=bow_get_data, type='bow')
 
-# # 5 layers, yes/no (top 2)
-# run_model(epochs=EPOCHS, model_name='5L_yes_no_bow', layers=5, check_top_ans=2, removeYesNo=False, get_data=bow_get_data, type='bow')
-
-# # 3 layers, top 10 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='3L_top_10_bow', layers=3, check_top_ans=10, removeYesNo=True, get_data=bow_get_data, type='bow')
-
-# # 5 layers, top 10 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='5L_top_10_bow', layers=5, check_top_ans=10, removeYesNo=True, get_data=bow_get_data, type='bow')
-
-# # 3 layers, top 100 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='3L_top_100_bow', layers=3, check_top_ans=100, removeYesNo=True, get_data=bow_get_data, type='bow')
-
-# # 5 layers, top 100 answers (not including yes/no)
-# run_model(epochs=10, model_name='5L_top_100_bow', layers=5, check_top_ans=100, removeYesNo=True, get_data=bow_get_data, type='bow')
-run_model(epochs=EPOCHS, model_name='3L_yes_no_dropout', layers=3, check_top_ans=2, removeYesNo=False, get_data=bow_get_data, type='bow')
-
-# # 4 layers, yes/no (top 2)
-# run_model(epochs=EPOCHS, model_name='4L_yes_no_bow', layers=4, check_top_ans=2, removeYesNo=False, get_data=bow_get_data, type='bow')
-
 # 5 layers, yes/no (top 2)
-run_model(epochs=EPOCHS, model_name='5L_yes_no_dropout', layers=5, check_top_ans=2, removeYesNo=False, get_data=bow_get_data, type='bow')
+run_model(epochs=EPOCHS, model_name='5L_yes_no_bow', layers=5, check_top_ans=2, removeYesNo=False, get_data=bow_get_data, type='bow')
 
-# # 3 layers, top 10 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='3L_top_10_bow', layers=3, check_top_ans=10, removeYesNo=True, get_data=bow_get_data, type='bow')
+# 3 layers, top 10 answers (not including yes/no)
+run_model(epochs=EPOCHS, model_name='3L_top_10_bow', layers=3, check_top_ans=10, removeYesNo=True, get_data=bow_get_data, type='bow')
 
-# # 4 layers, top 10 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='4L_top_10_bow', layers=4, check_top_ans=10, removeYesNo=True, get_data=bow_get_data, type='bow')
+# 5 layers, top 10 answers (not including yes/no)
+run_model(epochs=EPOCHS, model_name='5L_top_10_bow', layers=5, check_top_ans=10, removeYesNo=True, get_data=bow_get_data, type='bow')
 
-# # 5 layers, top 10 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='5L_top_10_bow', layers=5, check_top_ans=10, removeYesNo=True, get_data=bow_get_data, type='bow')
+# 3 layers, top 100 answers (not including yes/no)
+run_model(epochs=EPOCHS, model_name='3L_top_100_bow', layers=3, check_top_ans=100, removeYesNo=True, get_data=bow_get_data, type='bow')
 
-# # 3 layers, top 100 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='3L_top_100_bow', layers=3, check_top_ans=100, removeYesNo=True, get_data=bow_get_data, type='bow')
-
-# # 4 layers, top 100 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='4L_top_100_bow', layers=4, check_top_ans=100, removeYesNo=True, get_data=bow_get_data, type='bow')
-
-# # 5 layers, top 100 answers (not including yes/no)
-# run_model(epochs=EPOCHS, model_name='5L_top_100_bow', layers=5, check_top_ans=100, removeYesNo=True, get_data=bow_get_data, type='bow')
+# 5 layers, top 100 answers (not including yes/no)
+run_model(epochs=EPOCHS, model_name='5L_top_100_bow', layers=5, check_top_ans=100, removeYesNo=True, get_data=bow_get_data, type='bow')
+# 3 layer dropout
+run_model(epochs=EPOCHS, model_name='3L_yes_no_dropout', layers=3, check_top_ans=2, removeYesNo=False, get_data=bow_get_data, type='bow')
